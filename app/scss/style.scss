@@ -16,11 +16,11 @@
 .menu{
     &__list{
         display: flex;
-        padding-bottom: 38px;
+        padding: 0 0 38px 0;
     }
     &__list-item{
         @extend %title-font-400;
-        padding-right: 30px;
+        padding: 0 30px 0 0;
         font-size: 18px;
         color: $title;
     }
@@ -35,7 +35,7 @@
     font-size: 18px;
     color: #363131;
     position: relative;
-    padding-left: 10px;
+    padding: 0 0 0 10px;
     &::before{
         content: '';
         width: 21px;
@@ -58,11 +58,11 @@
         width: 971px;
     }
     &__title-item{
-        padding-left: 208px;
+        padding: 0 0 0 208px;
     }
     &__title-heading{
         width: 971px;
-        padding-top: 150px;
+        padding: 150px 0 0 0;
         @extend %title-font-700;
         font-size: 48px;
     }
@@ -70,7 +70,7 @@
         @extend %title-font-400;
         width: 500px;
         font-size: 18px;
-        padding-top: 35px;
+        padding: 35px 0 0 0;
         position: relative;
         &::before{
             content: '';
@@ -83,7 +83,7 @@
         }
     }
     &__phone-mail{
-        padding-top: 231px;
+        padding: 231px 0 0 0;
     }
     &__list{
         display: flex;
@@ -107,8 +107,9 @@
         display: flex;
         height: 64px;
         padding: 471px 0 0 515px;
-    }&__btn-item{
-        padding-left: 1px;
+    }
+    &__btn-item{
+        padding: 0 0 0 1px;
     }
 }
 
@@ -120,13 +121,13 @@
         font-style: italic;
         font-weight: 300;
         font-size: 14px;
-        margin-top: 41px;
+        margin: 41px 0 0 0;
     }
     &__menu-link{
         color: $title;
     }
     &__title{
-        padding-top: 20px;
+        padding: 20px 0 0 0;
     }
     &__title-heading{
         @extend %title-font-700;
@@ -134,7 +135,7 @@
         width: 861px;
     }
     &__title-text{
-        padding-top: 34px;
+        padding: 34px 0 0 0;
         @extend %title-font-400;
         font-size: 18px;
         width: 859px;
@@ -148,7 +149,7 @@
         @extend %title-font-700;
         font-size: 48px;
         width: 602px;
-        padding-top: 81px;
+        padding: 81px 0 0 0;
     }
     &__clothes-more{
         padding: 104px 30px 0 0;
@@ -170,7 +171,7 @@
     &__clothes-catalog{
         display: flex;
         justify-content: space-between;
-        padding-top: 62px;
+        padding: 62px 0 0 0;
     }
     &__collection-wrapper{
         display: flex;
@@ -180,7 +181,7 @@
         @extend %title-font-700;
         font-size: 48px;
         width: 421px;
-        padding-top: 120px;
+        padding: 120px 0 0 0;
     }
     &__collection-more{
         padding: 146px 30px 0 0;
@@ -209,24 +210,24 @@
         @extend %title-font-700;
         font-size: 32px;
         color: #FF5F01;
-        padding-top: 62px;
+        padding: 62px 0 0 0;
         height: 42px;
     }
     &__collection-text{
         @extend %title-font-400;
         font-size: 18px;
         line-height: 32px;
-        padding-top: 88px;
+        padding: 88px 0 0 0;
     }
     &__btn-slider{
         display: flex;
         height: 64px;
-        padding-top: 72px;
+        padding: 72px 0 0 0 ;
     }&__btn-item{
-        padding-left: 1px;
+        padding: 0 0 0 1px;
     }
     &__collction-img{
-        padding-top: 60px;
+        padding: 60px 0 0 0;
         width: 861px;
     }
 }
