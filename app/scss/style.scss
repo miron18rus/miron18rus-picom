@@ -232,8 +232,134 @@
     }
 }
 
+.order{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    margin: 47px 0 0 0;
+    background-color: $text;
+    &__heading{
+        @extend %title-font-700;
+        font-size: 32px;
+        padding: 73px 0 0 0;    
+    }
+    &__form{
+        display: inline-flex;
+        flex-wrap: wrap;
+        padding: 60px 0 0 0;
+        max-width: 862px;
+    }
+    &__form-item{
+        font-family: 'Arimo', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        width: 431px;
+        height: 80px;
+        border: 1px solid #DBDBDB;
+        padding: 0 0 0 30px;
+    }
+    &__form-username{
+        border-radius: 4px 0px 0px 0px;
+    }
+    &__form-email{
+        border-radius: 0px 0px 0px 4px;
+    }
+    &__form-company{
+        border-radius: 0px 4px 0px 0px;
+    }
+    &__form-message{
+        font-family: 'Arimo', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        width: 431px;
+        height: 160px;
+        border: 1px solid #DBDBDB;
+        border-radius: 0px 0px 4px 0px;
+        padding: 31px 0 0 30px;
+        resize: none;
 
-
+    }
+    &__form-text{
+        font-family: 'Arimo', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        max-width: 603px;
+        padding: 40px 0 115px 0;
+        line-height: 32px;
+    }
+    &__form-text--link{
+        color: #FFFFFFFF
+    }
+    &__form-button{
+        width: 217px;
+        height: 60px;
+        margin: 40px 0 0 0;
+        border: none;
+        border-radius: 4px;
+        background-color: #DBDBDB;
+        @extend %title-font-700;
+        font-size: 16px;
+        color: #FFFFFFFF;
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 475px;
+        height: 475px;
+        background-color: #FFFFFFFF;
+        border-radius: 4px;
+        margin: 73px 0 0 0;
+    }
+    &__card-question{
+        @extend %title-font-900;
+        font-size: 18px;
+        line-height: 32px;
+        padding: 37px 0 0 0;
+    }
+    &__card-phone{
+        @extend %title-font-700;
+        font-size: 32px;
+        line-height: 48px;
+        padding: 30px 0 0 0;
+        color: #191919;
+    }
+    &__card-mail{
+        @extend %title-font-700;
+        font-size: 24px;
+        line-height: 34px;
+        color: #FF5F01;
+        padding: 10px 0 0 15px;
+        position: relative;
+        &::before{
+            content: '';
+            width: 160px;
+            height: 1px;
+            position: absolute;
+            top: 50px;
+            left: 162px;
+            background-color: #FF5F01;
+        }
+    }
+    &__card-avatar{
+        padding: 37px 0 0 177px;
+    }
+    &__card-name{
+        @extend %title-font-700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #191919;
+        padding: 23px 0 0 0;
+    }
+    &__card-position{
+        @extend %title-font-400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #191919;
+        padding: 5px 0 0 0;
+    }
+}
 
 .footer{
     &__heading{
