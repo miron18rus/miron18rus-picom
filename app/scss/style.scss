@@ -59,6 +59,19 @@
     }
     &__title-item {
         padding: 0 0 0 208px;
+        
+    }
+    &__list-item--active{
+        position: relative;
+        &::before{
+            content: '';
+            width: 67px;
+            height: 73px;
+            background: no-repeat url(../images/ellipse.svg);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
     }
     &__title-heading {
         width: 971px;
@@ -84,6 +97,10 @@
     }
     &__phone-mail {
         padding: 231px 0 0 0;
+    }
+    &__phone-img{
+        position: relative;
+        top: 40px;
     }
     &__list {
         display: flex;
