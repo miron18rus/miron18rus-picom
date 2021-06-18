@@ -1,43 +1,43 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'libs';
-@import 'global';
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
 
-.header{
-    &__inner{
+.header {
+    &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 120px; 
+        height: 120px;
     }
 }
 
-.menu{
-    &__list{
+.menu {
+    &__list {
         display: flex;
         padding: 0 0 38px 0;
     }
-    &__list-item{
+    &__list-item {
         @extend %title-font-400;
         padding: 0 30px 0 0;
         font-size: 18px;
         color: $title;
     }
-    &__list-link{
+    &__list-link {
         color: $title;
     }
 }
 
-.header__info-tel{
-    font-family: 'Noto Sans', sans-serif;
+.header__info-tel {
+    font-family: "Noto Sans", sans-serif;
     font-weight: 600;
     font-size: 18px;
     color: #363131;
     position: relative;
     padding: 0 0 0 10px;
-    &::before{
-        content: '';
+    &::before {
+        content: "";
         width: 21px;
         height: 22px;
         background-image: url(../images/header_tel.svg);
@@ -47,119 +47,119 @@
     }
 }
 
-.top{
+.top {
     display: flex;
     justify-content: space-between;
-    background:no-repeat top url(../images/content/main-content.jpg);
+    background: no-repeat top url(../images/content/main-content.jpg);
     width: 100%;
-    &__inner{
+    &__inner {
         display: flex;
         flex-wrap: wrap;
         width: 971px;
     }
-    &__title-item{
+    &__title-item {
         padding: 0 0 0 208px;
     }
-    &__title-heading{
+    &__title-heading {
         width: 971px;
         padding: 150px 0 0 0;
         @extend %title-font-700;
         font-size: 48px;
     }
-    &__title-text{
+    &__title-text {
         @extend %title-font-400;
         width: 500px;
         font-size: 18px;
         padding: 35px 0 0 0;
         position: relative;
-        &::before{
-            content: '';
+        &::before {
+            content: "";
             width: 2px;
             height: 50px;
             position: absolute;
-            background-color: #FF5F01;
+            background-color: #ff5f01;
             top: 30px;
             left: -20px;
         }
     }
-    &__phone-mail{
+    &__phone-mail {
         padding: 231px 0 0 0;
     }
-    &__list{
+    &__list {
         display: flex;
         justify-content: space-around;
         @extend %title-font-700;
         width: 212px;
         margin: 180px 0 99px 208px;
     }
-    &__list-item{
+    &__list-item {
         position: relative;
     }
-    &__list-link{
-        color: #FFFFFFFF;
+    &__list-link {
+        color: #ffffffff;
     }
-    &__list-text{
+    &__list-text {
         position: absolute;
         top: 22px;
         left: 22px;
     }
-    &__btn-slider{
+    &__btn-slider {
         display: flex;
         height: 64px;
         padding: 471px 0 0 515px;
     }
-    &__btn-item{
+    &__btn-item {
         padding: 0 0 0 1px;
     }
 }
 
-.second{
-    &__menu-breadcrumb{
+.second {
+    &__menu-breadcrumb {
         display: flex;
         width: 440px;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-style: italic;
         font-weight: 300;
         font-size: 14px;
         margin: 41px 0 0 0;
     }
-    &__menu-link{
+    &__menu-link {
         color: $title;
     }
-    &__title{
+    &__title {
         padding: 20px 0 0 0;
     }
-    &__title-heading{
+    &__title-heading {
         @extend %title-font-700;
         font-size: 48px;
         width: 861px;
     }
-    &__title-text{
+    &__title-text {
         padding: 34px 0 0 0;
         @extend %title-font-400;
         font-size: 18px;
         width: 859px;
         line-height: 32px;
     }
-    &__clothes-wrapper{
+    &__clothes-wrapper {
         display: flex;
-        justify-content: space-between
+        justify-content: space-between;
     }
-    &__clothes-heading{
+    &__clothes-heading {
         @extend %title-font-700;
         font-size: 48px;
         width: 602px;
         padding: 81px 0 0 0;
     }
-    &__clothes-more{
+    &__clothes-more {
         padding: 104px 30px 0 0;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 500;
         position: relative;
         font-size: 18px;
-        color: #FF5F01;
-        &::before{
-            content: '';
+        color: #ff5f01;
+        &::before {
+            content: "";
             background-image: url(../images/arrow_right.svg);
             width: 17px;
             height: 15px;
@@ -168,30 +168,30 @@
             left: 82px;
         }
     }
-    &__clothes-catalog{
+    &__clothes-catalog {
         display: flex;
         justify-content: space-between;
         padding: 62px 0 0 0;
     }
-    &__collection-wrapper{
+    &__collection-wrapper {
         display: flex;
-        justify-content: space-between
+        justify-content: space-between;
     }
-    &__collection-heading{
+    &__collection-heading {
         @extend %title-font-700;
         font-size: 48px;
         width: 421px;
         padding: 120px 0 0 0;
     }
-    &__collection-more{
+    &__collection-more {
         padding: 146px 30px 0 0;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 500;
         position: relative;
         font-size: 18px;
-        color: #FF5F01;
-        &::before{
-            content: '';
+        color: #ff5f01;
+        &::before {
+            content: "";
             background-image: url(../images/arrow_right.svg);
             width: 17px;
             height: 15px;
@@ -200,159 +200,159 @@
             left: 136px;
         }
     }
-    &__collection-info{
+    &__collection-info {
         display: flex;
         flex-wrap: wrap;
         width: 475px;
         height: 100%;
     }
-    &__collection-title{
+    &__collection-title {
         @extend %title-font-700;
         font-size: 32px;
-        color: #FF5F01;
+        color: #ff5f01;
         padding: 62px 0 0 0;
         height: 42px;
     }
-    &__collection-text{
+    &__collection-text {
         @extend %title-font-400;
         font-size: 18px;
         line-height: 32px;
         padding: 88px 0 0 0;
     }
-    &__btn-slider{
+    &__btn-slider {
         display: flex;
         height: 64px;
-        padding: 72px 0 0 0 ;
-    }&__btn-item{
+        padding: 72px 0 0 0;
+    }
+    &__btn-item {
         padding: 0 0 0 1px;
     }
-    &__collction-img{
+    &__collction-img {
         padding: 60px 0 0 0;
         flex: 0 0 861px;
     }
 }
 
-.order{
-    &__inner{
+.order {
+    &__inner {
         display: flex;
         justify-content: space-between;
     }
     margin: 47px 0 0 0;
     background-color: $text;
-    &__heading{
+    &__heading {
         @extend %title-font-700;
         font-size: 32px;
-        padding: 73px 0 0 0;    
+        padding: 73px 0 0 0;
     }
-    &__form{
+    &__form {
         display: inline-flex;
         flex-wrap: wrap;
         padding: 60px 0 0 0;
         max-width: 862px;
     }
-    &__form-item{
-        font-family: 'Arimo', sans-serif;
+    &__form-item {
+        font-family: "Arimo", sans-serif;
         font-weight: 400;
         font-size: 16px;
         width: 431px;
         height: 80px;
-        border: 1px solid #DBDBDB;
+        border: 1px solid #dbdbdb;
         padding: 0 0 0 30px;
     }
-    &__form-username{
+    &__form-username {
         border-radius: 4px 0px 0px 0px;
     }
-    &__form-email{
+    &__form-email {
         border-radius: 0px 0px 0px 4px;
     }
-    &__form-company{
+    &__form-company {
         border-radius: 0px 4px 0px 0px;
     }
-    &__form-message{
-        font-family: 'Arimo', sans-serif;
+    &__form-message {
+        font-family: "Arimo", sans-serif;
         font-weight: 400;
         font-size: 16px;
         width: 431px;
         height: 160px;
-        border: 1px solid #DBDBDB;
+        border: 1px solid #dbdbdb;
         border-radius: 0px 0px 4px 0px;
         padding: 31px 0 0 30px;
         resize: none;
-
     }
-    &__form-text{
-        font-family: 'Arimo', sans-serif;
+    &__form-text {
+        font-family: "Arimo", sans-serif;
         font-weight: 400;
         font-size: 18px;
         max-width: 603px;
         padding: 40px 0 115px 0;
         line-height: 32px;
     }
-    &__form-text--link{
-        color: #FFFFFFFF
+    &__form-text--link {
+        color: #ffffffff;
     }
-    &__form-button{
+    &__form-button {
         width: 217px;
         height: 60px;
         margin: 40px 0 0 0;
         border: none;
         border-radius: 4px;
-        background-color: #DBDBDB;
+        background-color: #dbdbdb;
         @extend %title-font-700;
         font-size: 16px;
-        color: #FFFFFFFF;
+        color: #ffffffff;
     }
-    &__card{
+    &__card {
         display: flex;
         flex-direction: column;
         text-align: center;
         width: 475px;
         height: 475px;
-        background-color: #FFFFFFFF;
+        background-color: #ffffffff;
         border-radius: 4px;
         margin: 73px 0 0 0;
     }
-    &__card-question{
+    &__card-question {
         @extend %title-font-900;
         font-size: 18px;
         line-height: 32px;
         padding: 37px 0 0 0;
     }
-    &__card-phone{
+    &__card-phone {
         @extend %title-font-700;
         font-size: 32px;
         line-height: 48px;
         padding: 30px 0 0 0;
         color: #191919;
     }
-    &__card-mail{
+    &__card-mail {
         @extend %title-font-700;
         font-size: 24px;
         line-height: 34px;
-        color: #FF5F01;
+        color: #ff5f01;
         padding: 10px 0 0 15px;
         position: relative;
-        &::before{
-            content: '';
+        &::before {
+            content: "";
             width: 160px;
             height: 1px;
             position: absolute;
             top: 50px;
             left: 162px;
-            background-color: #FF5F01;
+            background-color: #ff5f01;
         }
     }
-    &__card-avatar{
+    &__card-avatar {
         padding: 37px 0 0 177px;
     }
-    &__card-name{
+    &__card-name {
         @extend %title-font-700;
         font-size: 24px;
         line-height: 32px;
         color: #191919;
         padding: 23px 0 0 0;
     }
-    &__card-position{
+    &__card-position {
         @extend %title-font-400;
         font-size: 16px;
         line-height: 18px;
@@ -361,47 +361,47 @@
     }
 }
 
-.footer{
-    &__heading{
+.footer {
+    &__heading {
         display: flex;
         justify-content: space-between;
     }
-    &__logo{
+    &__logo {
         padding: 131px 0 0 5px;
     }
-    &__wrapper{
+    &__wrapper {
         display: flex;
         justify-content: space-between;
         padding: 43px 159px 0 0;
     }
-    &__social{
+    &__social {
         display: flex;
-        margin: 117px 198px 0 0; 
+        margin: 117px 198px 0 0;
     }
-    &__social-item{
+    &__social-item {
         padding: 0 10px 0 0;
     }
     &__info-company,
-    &__info-addr{
-        font-family: 'Arimo', sans-serif;
+    &__info-addr {
+        font-family: "Arimo", sans-serif;
         font-weight: 400;
         font-size: 16px;
-        padding:0 0 10px 0;
+        padding: 0 0 10px 0;
     }
-    &__wrapper-mail--phone{
+    &__wrapper-mail--phone {
         display: flex;
         flex-direction: column;
         padding: 25px 0 0 0;
-        font-family: 'Arimo', sans-serif;
+        font-family: "Arimo", sans-serif;
         font-weight: 400;
         font-size: 16px;
     }
-    &__info-phone{
+    &__info-phone {
         color: $title;
         padding: 0 0 0 25px;
         position: relative;
-        &::before{
-            content: '';
+        &::before {
+            content: "";
             width: 14px;
             height: 14px;
             position: absolute;
@@ -410,13 +410,13 @@
             left: 0px;
         }
     }
-    &__info-mail{
+    &__info-mail {
         color: $title;
         padding: 10px 0 0 0;
         padding: 18px 0 0 25px;
         position: relative;
-        &::before{
-            content: '';
+        &::before {
+            content: "";
             width: 17px;
             height: 12px;
             position: absolute;
@@ -425,32 +425,32 @@
             left: 0px;
         }
     }
-    &__menu{
+    &__menu {
         position: relative;
         margin: 0 0 113px 0;
-        &:nth-child(2){
-            margin: 0 -55px 0 0 ;
+        &:nth-child(2) {
+            margin: 0 -55px 0 0;
         }
     }
-    &__menu-title{
+    &__menu-title {
         @extend %title-font-700;
         font-size: 16px;
         line-height: 24px;
         padding: 0 0 15px 0;
     }
-    &__menu-link{
-        font-family: 'Arimo', sans-serif;
+    &__menu-link {
+        font-family: "Arimo", sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 38px;
         color: $title;
     }
-    &__menu-link--active{
+    &__menu-link--active {
         padding: 0 0 0 30px;
         color: $text;
         position: relative;
-        &::before{
-            content: '';
+        &::before {
+            content: "";
             width: 20px;
             height: 18px;
             background-image: url(../images/download_catalog.svg);
@@ -459,13 +459,13 @@
             left: 0px;
         }
     }
-    &__double{
+    &__double {
         display: flex;
         justify-content: space-between;
         padding: 37px 0 109px 0;
         position: relative;
-        &::before{
-            content: '';
+        &::before {
+            content: "";
             width: 1920px;
             height: 1px;
             position: absolute;
@@ -474,18 +474,18 @@
             background-color: black;
         }
     }
-    &__double-rights{
+    &__double-rights {
         @extend %title-font-400;
         font-size: 16px;
-        color: #7E8385;
+        color: #7e8385;
     }
-    &__double-development{
+    &__double-development {
         @extend %title-font-400;
         font-size: 16px;
-        color: #7E8385;
+        color: #7e8385;
     }
-    &__double-development--link{
-        font-family: 'Arimo', sans-serif;
+    &__double-development--link {
+        font-family: "Arimo", sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 38px;
